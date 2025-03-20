@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -5,24 +8,24 @@
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --foreground: 224 71% 4%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 224 71% 4%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 224 71% 4%;
 
-    --primary: 222.2 47.4% 11.2%;
+    --primary: 196 89% 57%;
     --primary-foreground: 210 40% 98%;
 
-    --secondary: 210 40% 96.1%;
+    --secondary: 45 100% 65%;
     --secondary-foreground: 222.2 47.4% 11.2%;
 
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
 
-    --accent: 210 40% 96.1%;
+    --accent: 157 68% 57%;
     --accent-foreground: 222.2 47.4% 11.2%;
 
     --destructive: 0 84.2% 60.2%;
@@ -30,72 +33,89 @@
 
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --ring: 196 89% 57%;
 
-    --radius: 0.5rem;
-
-    --sidebar-background: 0 0% 98%;
-
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --radius: 0.8rem;
   }
 
-  .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
-
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
-
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
-
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
-
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
-
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
-  }
-}
-
-@layer base {
   * {
     @apply border-border;
+    scroll-behavior: smooth;
   }
 
   body {
     @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  /* Glass effect styles */
+  .glass {
+    @apply backdrop-blur-md bg-white/70 shadow-soft border border-white/20;
+  }
+
+  .glass-dark {
+    @apply backdrop-blur-md bg-alaula-dark/80 shadow-soft border border-white/10;
+  }
+
+  /* Custom button styles */
+  .btn-primary {
+    @apply inline-flex items-center justify-center rounded-full bg-alaula-blue px-6 py-3 text-base font-medium text-white shadow-glow-blue transition-all hover:bg-opacity-90 hover:shadow-inner-soft active:scale-[0.98];
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center rounded-full bg-white border border-alaula-blue/20 px-6 py-3 text-base font-medium text-alaula-blue shadow-soft transition-all hover:bg-alaula-blue/5 hover:shadow-inner-soft active:scale-[0.98];
+  }
+
+  /* Custom animations classes */
+  .animated-item {
+    @apply opacity-0;
+  }
+
+  .animated-item:nth-child(1) {
+    animation-delay: 0.1s;
+  }
+  .animated-item:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+  .animated-item:nth-child(3) {
+    animation-delay: 0.3s;
+  }
+  .animated-item:nth-child(4) {
+    animation-delay: 0.4s;
+  }
+  .animated-item:nth-child(5) {
+    animation-delay: 0.5s;
+  }
+  .animated-item:nth-child(6) {
+    animation-delay: 0.6s;
+  }
+  .animated-item:nth-child(7) {
+    animation-delay: 0.7s;
+  }
+
+  /* Custom card styles */
+  .card-hover {
+    @apply transition-transform duration-300 hover:-translate-y-2;
+  }
+
+  /* Custom chip styles */
+  .chip {
+    @apply inline-flex items-center rounded-full bg-alaula-blue/10 px-3 py-1 text-xs font-medium text-alaula-blue;
+  }
+
+  .chip-yellow {
+    @apply bg-alaula-yellow/10 text-alaula-yellow;
+  }
+
+  .chip-green {
+    @apply bg-alaula-green/10 text-alaula-green;
+  }
+
+  .chip-purple {
+    @apply bg-alaula-purple/10 text-alaula-purple;
+  }
+
+  .chip-orange {
+    @apply bg-alaula-orange/10 text-alaula-orange;
   }
 }
