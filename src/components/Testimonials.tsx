@@ -74,7 +74,7 @@ const Testimonials = () => {
             </div>
             
             <p className="mb-8 text-lg italic text-alaula-dark/90">
-              "{testimonials[activeIndex].content}"
+              &ldquo;{testimonials[activeIndex].content}&rdquo;
             </p>
             
             <div className="flex items-center">
