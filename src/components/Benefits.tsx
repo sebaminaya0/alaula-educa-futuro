@@ -29,19 +29,19 @@ const Benefits = () => {
       icon: School,
       title: "Contenido alineado al currículo",
       description: "Nuestro contenido está diseñado para complementar lo que tus hijos aprenden en la escuela.",
-      color: "bg-alaula-blue"
+      color: "bg-alaula-orange"
     },
     {
       icon: Clock,
       title: "Micro-lecciones diarias",
       description: "Lecciones cortas y efectivas que se adaptan a la rutina y atención de los niños.",
-      color: "bg-alaula-green"
+      color: "bg-alaula-teal"
     },
     {
       icon: CreditCard,
       title: "Precio asequible",
       description: "Programas adaptados a todos los presupuestos familiares de Latinoamérica.",
-      color: "bg-alaula-purple"
+      color: "bg-alaula-sunset"
     },
     {
       icon: Trophy,
@@ -53,13 +53,13 @@ const Benefits = () => {
       icon: Cpu,
       title: "Habilidades para el siglo XXI",
       description: "Finanzas personales, tecnología, ética y pensamiento crítico.",
-      color: "bg-alaula-orange"
+      color: "bg-alaula-orange-dark"
     },
     {
       icon: Users,
       title: "Preparación complementaria",
       description: "Refuerzo perfecto para un mejor desempeño en el colegio regular.",
-      color: "bg-alaula-pink"
+      color: "bg-alaula-teal-dark"
     },
     {
       icon: Smartphone,
@@ -85,11 +85,18 @@ const Benefits = () => {
           ))}
         </div>
 
-        <div className="mt-12 rounded-2xl bg-gradient-to-r from-alaula-blue to-alaula-green p-0.5">
+        <div className="mt-12 rounded-2xl bg-gradient-to-r from-alaula-orange to-alaula-teal p-0.5">
           <div className="rounded-2xl bg-white px-6 py-6 md:px-8 md:py-8">
             <div className="grid gap-8 md:grid-cols-2">
               <div>
-                <h3 className="font-display text-2xl font-bold">Lo que los padres buscan, lo que los niños necesitan</h3>
+                <div className="flex items-center space-x-3 mb-4">
+                  <img 
+                    src="/lovable-uploads/6458541e-0cc7-4506-a90b-52627d5dc265.png" 
+                    alt="Aulita" 
+                    className="h-12 w-12"
+                  />
+                  <h3 className="font-display text-2xl font-bold">Lo que los padres buscan, lo que los niños necesitan</h3>
+                </div>
                 <p className="mt-4 text-alaula-dark/80">
                   En alaula hemos diseñado una experiencia educativa que satisface la necesidad de complementar la educación escolar con habilidades prácticas y modernas.
                 </p>
@@ -105,7 +112,7 @@ const Benefits = () => {
                   "Plataforma 100% digital en todos los dispositivos."
                 ].map((item, index) => (
                   <div key={index} className="flex items-start">
-                    <div className="mr-3 flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-alaula-green">
+                    <div className="mr-3 flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-alaula-teal">
                       <Check className="h-4 w-4 text-white" />
                     </div>
                     <p className="text-sm font-medium">{item}</p>

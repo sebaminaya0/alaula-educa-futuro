@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -71,17 +70,26 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-        // Alaula custom color palette
+        // Alaula custom color palette inspired by Aulita
         alaula: {
-          blue: '#34C4F3',
-          yellow: '#FFCC4A',
-          green: '#4FD1A2',
-          purple: '#A78BFA',
-          orange: '#FF7E47',
-          pink: '#FF8FA3',
-          dark: '#2D3648',
+          // Colores principales de Aulita
+          orange: '#FF8C42',
+          'orange-light': '#FFB366',
+          'orange-dark': '#E6722A',
+          teal: '#2DD4BF',
+          'teal-light': '#5EEAD4',
+          'teal-dark': '#0F766E',
+          // Colores complementarios
+          yellow: '#FDE047',
+          'yellow-light': '#FEF08A',
+          cream: '#FEF3E2',
+          // Colores neutros
+          dark: '#1F2937',
           light: '#F9FAFB',
-          offwhite: '#F3F4F6',
+          offwhite: '#FEF7ED',
+          // Colores para gradientes
+          sunset: '#FB923C',
+          dawn: '#FBBF24',
         }
 			},
 			borderRadius: {
@@ -189,13 +197,14 @@ export default {
         'medium': '0 4px 20px rgba(0, 0, 0, 0.08)',
         'sharp': '0 6px 30px rgba(0, 0, 0, 0.12)',
         'inner-soft': 'inset 0 2px 4px 0 rgba(0, 0, 0, 0.05)',
-        'glow-blue': '0 0 20px rgba(52, 196, 243, 0.5)',
-        'glow-yellow': '0 0 20px rgba(255, 204, 74, 0.5)',
+        'glow-orange': '0 0 20px rgba(255, 140, 66, 0.5)',
+        'glow-teal': '0 0 20px rgba(45, 212, 191, 0.5)',
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
         'hero-pattern': 'url("data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'%239C92AC\' fill-opacity=\'0.04\'%3E%3Cpath d=\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")',
+        'aulita-gradient': 'linear-gradient(135deg, #FB923C 0%, #FDE047 50%, #2DD4BF 100%)',
       }
 		}
 	},

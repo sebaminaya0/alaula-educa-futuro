@@ -16,16 +16,16 @@
     --popover: 0 0% 100%;
     --popover-foreground: 224 71% 4%;
 
-    --primary: 196 89% 57%;
+    --primary: 18 100% 62%;
     --primary-foreground: 210 40% 98%;
 
-    --secondary: 45 100% 65%;
+    --secondary: 46 93% 64%;
     --secondary-foreground: 222.2 47.4% 11.2%;
 
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
 
-    --accent: 157 68% 57%;
+    --accent: 173 80% 40%;
     --accent-foreground: 222.2 47.4% 11.2%;
 
     --destructive: 0 84.2% 60.2%;
@@ -33,7 +33,7 @@
 
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 196 89% 57%;
+    --ring: 18 100% 62%;
 
     --radius: 0.8rem;
   }
@@ -57,13 +57,13 @@
     @apply backdrop-blur-md bg-alaula-dark/80 shadow-soft border border-white/10;
   }
 
-  /* Custom button styles */
+  /* Custom button styles with Aulita colors */
   .btn-primary {
-    @apply inline-flex items-center justify-center rounded-full bg-alaula-blue px-6 py-3 text-base font-medium text-white shadow-glow-blue transition-all hover:bg-opacity-90 hover:shadow-inner-soft active:scale-[0.98];
+    @apply inline-flex items-center justify-center rounded-full bg-alaula-orange px-6 py-3 text-base font-medium text-white shadow-glow-orange transition-all hover:bg-alaula-orange-dark hover:shadow-inner-soft active:scale-[0.98];
   }
 
   .btn-secondary {
-    @apply inline-flex items-center justify-center rounded-full bg-white border border-alaula-blue/20 px-6 py-3 text-base font-medium text-alaula-blue shadow-soft transition-all hover:bg-alaula-blue/5 hover:shadow-inner-soft active:scale-[0.98];
+    @apply inline-flex items-center justify-center rounded-full bg-white border border-alaula-orange/20 px-6 py-3 text-base font-medium text-alaula-orange shadow-soft transition-all hover:bg-alaula-cream/50 hover:shadow-inner-soft active:scale-[0.98];
   }
 
   /* Custom animations classes */
@@ -98,24 +98,20 @@
     @apply transition-transform duration-300 hover:-translate-y-2;
   }
 
-  /* Custom chip styles */
+  /* Custom chip styles with Aulita colors */
   .chip {
-    @apply inline-flex items-center rounded-full bg-alaula-blue/10 px-3 py-1 text-xs font-medium text-alaula-blue;
+    @apply inline-flex items-center rounded-full bg-alaula-orange/10 px-3 py-1 text-xs font-medium text-alaula-orange;
+  }
+
+  .chip-teal {
+    @apply bg-alaula-teal/10 text-alaula-teal;
   }
 
   .chip-yellow {
     @apply bg-alaula-yellow/10 text-alaula-yellow;
   }
 
-  .chip-green {
-    @apply bg-alaula-green/10 text-alaula-green;
-  }
-
-  .chip-purple {
-    @apply bg-alaula-purple/10 text-alaula-purple;
-  }
-
-  .chip-orange {
-    @apply bg-alaula-orange/10 text-alaula-orange;
+  .chip-cream {
+    @apply bg-alaula-cream/80 text-alaula-orange;
   }
 }
