@@ -1,4 +1,3 @@
-
 import { Check, Users, Clock, CreditCard, Trophy, Cpu, School, Smartphone } from 'lucide-react';
 
 const BenefitCard = ({ 
@@ -89,14 +88,7 @@ const Benefits = () => {
           <div className="rounded-2xl bg-white px-6 py-6 md:px-8 md:py-8">
             <div className="grid gap-8 md:grid-cols-2">
               <div>
-                <div className="flex items-center space-x-3 mb-4">
-                  <img 
-                    src="/lovable-uploads/6458541e-0cc7-4506-a90b-52627d5dc265.png" 
-                    alt="Aulita - Colibrí mascota de alaula" 
-                    className="h-12 w-12"
-                  />
-                  <h3 className="font-display text-2xl font-bold">Lo que los padres buscan, lo que los niños necesitan</h3>
-                </div>
+                <h3 className="font-display text-2xl font-bold mb-4">Lo que los padres buscan, lo que los niños necesitan</h3>
                 <p className="mt-4 text-alaula-dark/80">
                   En alaula hemos diseñado una experiencia educativa que satisface la necesidad de complementar la educación escolar con habilidades prácticas y modernas.
                 </p>

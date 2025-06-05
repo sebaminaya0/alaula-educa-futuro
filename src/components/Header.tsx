@@ -30,13 +30,6 @@ const Header = () => {
       >
         <div className="container mx-auto flex items-center justify-between">
           <a href="/" className="flex items-center space-x-2">
-            <div className="relative">
-              <img 
-                src="/lovable-uploads/6458541e-0cc7-4506-a90b-52627d5dc265.png" 
-                alt="Aulita - Colibrí mascota de alaula" 
-                className="h-8 w-8 md:h-10 md:w-10"
-              />
-            </div>
             <span className="text-2xl font-extrabold tracking-tight text-alaula-orange">
               alaula<span className="text-alaula-teal">.</span>
             </span>
@@ -147,15 +140,6 @@ const Header = () => {
             <div className="relative flex justify-center">
               <div className="relative h-72 w-72 animate-float md:h-80 md:w-80 lg:h-96 lg:w-96">
                 <div className="absolute top-1/2 left-1/2 h-full w-full -translate-x-1/2 -translate-y-1/2 rounded-full bg-gradient-to-br from-alaula-orange/20 to-alaula-teal/20 blur-xl"></div>
-                
-                {/* Aulita el colibrí en el centro */}
-                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-                  <img 
-                    src="/lovable-uploads/6458541e-0cc7-4506-a90b-52627d5dc265.png" 
-                    alt="Aulita - Colibrí mascota de alaula" 
-                    className="h-32 w-32 md:h-40 md:w-40 animate-pulse-soft"
-                  />
-                </div>
                 
                 <div className="glass absolute left-0 top-0 animate-pulse-soft rounded-2xl p-4 shadow-medium">
                   <div className="flex h-12 w-12 items-center justify-center rounded-full bg-alaula-orange text-white">
