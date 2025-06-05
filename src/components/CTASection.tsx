@@ -33,7 +33,7 @@ const CTASection = () => {
   return (
     <section id="cta" className="py-16 md:py-24">
       <div className="container mx-auto">
-        <div className="relative overflow-hidden rounded-3xl bg-gradient-to-r from-alaula-blue to-alaula-green p-8 md:p-12">
+        <div className="relative overflow-hidden rounded-3xl bg-gradient-to-r from-alaula-orange to-alaula-teal p-8 md:p-12">
           {/* Background elements */}
           <div className="absolute -top-24 -right-24 h-64 w-64 rounded-full bg-white opacity-10 blur-3xl"></div>
           <div className="absolute -bottom-32 -left-32 h-80 w-80 rounded-full bg-white opacity-10 blur-3xl"></div>
@@ -69,8 +69,8 @@ const CTASection = () => {
             <div className="bg-white/10 backdrop-blur-md rounded-2xl p-6 text-white">
               {isSubmitted ? (
                 <div className="flex flex-col items-center justify-center h-full py-12 text-center">
-                  <div className="rounded-full bg-alaula-green/20 p-3 mb-4">
-                    <CheckCircle className="h-10 w-10 text-alaula-green" />
+                  <div className="rounded-full bg-alaula-teal/20 p-3 mb-4">
+                    <CheckCircle className="h-10 w-10 text-alaula-teal" />
                   </div>
                   <h3 className="text-2xl font-bold mb-2">¡Gracias por registrarte!</h3>
                   <p className="text-white/80 mb-6">
@@ -131,7 +131,7 @@ const CTASection = () => {
                   
                   <Button 
                     type="submit" 
-                    className="w-full bg-white text-alaula-blue hover:bg-white/90"
+                    className="w-full bg-white text-alaula-orange hover:bg-white/90"
                     disabled={isSubmitting}
                   >
                     {isSubmitting ? (
