@@ -92,7 +92,7 @@ const Benefits = () => {
                 <div className="flex items-center space-x-3 mb-4">
                   <img 
                     src="/lovable-uploads/6458541e-0cc7-4506-a90b-52627d5dc265.png" 
-                    alt="Aulita" 
+                    alt="Aulita - Colibrí mascota de alaula" 
                     className="h-12 w-12"
                   />
                   <h3 className="font-display text-2xl font-bold">Lo que los padres buscan, lo que los niños necesitan</h3>

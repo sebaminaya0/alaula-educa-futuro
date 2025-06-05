@@ -33,7 +33,7 @@ const Header = () => {
             <div className="relative">
               <img 
                 src="/lovable-uploads/6458541e-0cc7-4506-a90b-52627d5dc265.png" 
-                alt="Aulita - Mascota de alaula" 
+                alt="Aulita - Colibrí mascota de alaula" 
                 className="h-8 w-8 md:h-10 md:w-10"
               />
             </div>
@@ -148,11 +148,11 @@ const Header = () => {
               <div className="relative h-72 w-72 animate-float md:h-80 md:w-80 lg:h-96 lg:w-96">
                 <div className="absolute top-1/2 left-1/2 h-full w-full -translate-x-1/2 -translate-y-1/2 rounded-full bg-gradient-to-br from-alaula-orange/20 to-alaula-teal/20 blur-xl"></div>
                 
-                {/* Aulita en el centro */}
+                {/* Aulita el colibrí en el centro */}
                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
                   <img 
                     src="/lovable-uploads/6458541e-0cc7-4506-a90b-52627d5dc265.png" 
-                    alt="Aulita - Mascota de alaula" 
+                    alt="Aulita - Colibrí mascota de alaula" 
                     className="h-32 w-32 md:h-40 md:w-40 animate-pulse-soft"
                   />
                 </div>
